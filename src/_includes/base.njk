@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="bundle.css">
-    <script src="bundle.js" defer></script>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/bundle.css">
+    <script src="/bundle.js" defer></script>
 </head>
 
 <body>
-    {{ content | safe }}
+    <div class="wrapper">
+        <main>
+            {{ content | safe }}
+        </main>
+        <footer>
+            Made with <a href="https://www.11ty.dev/">11ty</a>
+        </footer>
+    </div>
 </body>
 
 </html>
